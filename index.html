@@ -60,8 +60,8 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Tài khoản</a></li>
-                  <li><a href="#">Đăng xuất</a></li>
+                  <li><a href="profile.html">Tài khoản</a></li>
+                  <li><a href="login.html">Đăng xuất</a></li>
                 </ul>
               </div>
               <a href="login.html"><i class="fa fa-user-o"></i> Login</a>
@@ -613,28 +613,28 @@
         <div class="row">
           <div class="col-md-12">
             <div class="hot-deal">
-              <ul class="hot-deal-countdown">
+              <ul class="hot-deal-countdown" id="countdown">
                 <li>
                   <div>
-                    <h3>02</h3>
+                    <h3 id="days">02</h3>
                     <span>Days</span>
                   </div>
                 </li>
                 <li>
                   <div>
-                    <h3>10</h3>
+                    <h3 id="hours">10</h3>
                     <span>Hours</span>
                   </div>
                 </li>
                 <li>
                   <div>
-                    <h3>34</h3>
+                    <h3 id="minutes">34</h3>
                     <span>Mins</span>
                   </div>
                 </li>
                 <li>
                   <div>
-                    <h3>60</h3>
+                    <h3 id="seconds">60</h3>
                     <span>Secs</span>
                   </div>
                 </li>
@@ -1056,7 +1056,54 @@
       <!-- /bottom footer -->
     </footer>
     <!-- /FOOTER -->
+   <script>
+    function countdown() {
+  var daysElement = document.getElementById("days");
+  var hoursElement = document.getElementById("hours");
+  var minutesElement = document.getElementById("minutes");
+  var secondsElement = document.getElementById("seconds");
 
+  var days = parseInt(daysElement.textContent);
+  var hours = parseInt(hoursElement.textContent);
+  var minutes = parseInt(minutesElement.textContent);
+  var seconds = parseInt(secondsElement.textContent);
+
+  var countdownInterval = setInterval(function() {
+    if (seconds > 0) {
+      seconds--;
+    } else {
+      seconds = 59;
+
+      if (minutes > 0) {
+        minutes--;
+      } else {
+        minutes = 59;
+
+        if (hours > 0) {
+          hours--;
+        } else {
+          hours = 23;
+
+          if (days > 0) {
+            days--;
+          } else {
+            clearInterval(countdownInterval);
+            // Thời gian đã hết
+          }
+        }
+      }
+    }
+
+    daysElement.textContent = days.toString().padStart(2, "0");
+    hoursElement.textContent = hours.toString().padStart(2, "0");
+    minutesElement.textContent = minutes.toString().padStart(2, "0");
+    secondsElement.textContent = seconds.toString().padStart(2, "0");
+  }, 1000);
+}
+
+countdown();
+
+   </script>
     <!-- jQuery Plugins -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
