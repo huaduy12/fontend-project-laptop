@@ -380,8 +380,7 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.6;
   color: #1c1c1c;
 }
 
@@ -435,7 +434,7 @@ h4,
 
 h5,
 .h5 {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 h6,
@@ -2338,7 +2337,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #384aeb;
+  background-color: #d10024;
+  border-radius: 1.5rem;
   border-color: #d19c97;
 }
 
