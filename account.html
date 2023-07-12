@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Electro-Ecommerce</title>
+    <title>Electro - HTML Ecommerce Template</title>
 
     <!-- Google font -->
     <link
@@ -25,22 +25,11 @@
     <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
 
     <!-- Font Awesome Icon -->
-   <link rel="stylesheet" href="css/font-awesome.min.css" />
-   
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-   
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
 
     <!-- Custom stlylesheet -->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link type="text/css" rel="stylesheet" href="css/cartstyle.css" />
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -50,24 +39,13 @@
   </head>
   <body>
     <!-- HEADER -->
-    
     <header class="header-area">
       <!-- TOP HEADER -->
       <div id="top-header">
         <div class="container">
           <ul class="header-links pull-right">
-            
             <li>
-              <div class="btn-group" role="group">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  My account
-                  
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a href="profile.html">Tài khoản</a></li>
-                  <li><a href="login.html">Đăng xuất</a></li>
-                </ul>
-              </div>
+              <a href="#"><i class="fa fa-user-o"></i> My Account</a>
               <a href="login.html"><i class="fa fa-user-o"></i> Login</a>
               <a href="register.html"><i class="fa fa-user-o"></i> Register</a>
             </li>
@@ -85,7 +63,7 @@
             <!-- LOGO -->
             <div class="col-md-3">
               <div class="header-logo">
-                <a href="index.html" class="logo">
+                <a href="#" class="logo">
                   <img src="./img/logo.png" alt="" />
                 </a>
               </div>
@@ -202,7 +180,7 @@
       <!-- /MAIN HEADER -->
     </header>
     <!-- /HEADER -->
-    
+
     <!-- NAVIGATION -->
     <nav id="navigation">
       <!-- container -->
@@ -211,10 +189,10 @@
         <div id="responsive-nav">
           <!-- NAV -->
           <ul class="main-nav nav navbar-nav">
-            <li ><a href="index.html">Trang chủ</a></li>
+            <li class="active"><a href="index.html">Trang chủ</a></li>
             <li><a href="store.html">Cửa hàng</a></li>
             <li><a href="about.html">Giới thiệu</a></li>
-            <li class="active"><a href="contact.html">Liên hệ</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
           </ul>
           <!-- /NAV -->
         </div>
@@ -224,66 +202,138 @@
     </nav>
     <!-- /NAVIGATION -->
 
-  
-       <!-- Contact Start -->
-       <div class="container pt-5">
-        <div class="text-center mb-4">
-            <h2 class="section-title px-5"><span class="px-2">Contact For Any Queries</span></h2>
+    <!-- BREADCRUMB -->
+    <div id="breadcrumb" class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb-tree">
+              <li><a href="#">My account</a></li>
+              <li class="active">Account</li>
+            </ul>
+          </div>
         </div>
-        <div class="row px-xl-5">
-            <div class="col-lg-7 mb-5">
-                <div class="contact-form">
-                    <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="name" placeholder="Your Name"
-                                required="required" data-validation-required-message="Please enter your name" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" id="email" placeholder="Your Email"
-                                required="required" data-validation-required-message="Please enter your email" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject"
-                                required="required" data-validation-required-message="Please enter a subject" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control" rows="6" id="message" placeholder="Message"
-                                required="required"
-                                data-validation-required-message="Please enter your message"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div>
-                            <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">Send
-                                Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-5 mb-5">
-                
-                <div class="d-flex flex-column mb-3">
-                    <h5 class="font-weight-semi-bold mb-3">Store 1</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker text-primary mr-3" aria-hidden="true"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
-                    <p class="mb-2"><i class="fa fa-phone text-primary mr-3" aria-hidden="true"></i>+012 345 67890</p>
-                </div>
-                <div class="d-flex flex-column">
-                    <h5 class="font-weight-semi-bold mb-3">Store 2</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker text-primary mr-3" aria-hidden="true"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
-                    <p class="mb-0"><i class="fa fa-phone text-primary mr-3" aria-hidden="true"></i>+012 345 67890</p>
-                </div>
-            </div>
-        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
     </div>
-    <!-- Contact End -->
+    <!-- /BREADCRUMB -->
 
+    <!-- SECTION -->
+    <div class="section1">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-7">
+            <!-- Billing Details -->
+            <div class="billing-details">
+              <div class="section-title">
+                <h3 class="title">Thông tin tài khoản</h3>
+              </div>
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="text"
+                  name="username"
+                  placeholder="User name"
+                  value="duyhn12"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value="Hứa Như Duy"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value="Huaduy2k2@gmail.com"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="text"
+                  name="address"
+                  placeholder="Address"
+                  value="Bắc Từ Liêm, Hà Nội"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="tel"
+                  name="tel"
+                  placeholder="Telephone"
+                  value="0332706211"
+                />
+              </div>
+            </div>
+            <a href="#" class="primary-btn order-submit mb-20">Cập nhập</a>
+          </div>
 
-
+          <!-- Order Details -->
+          <div class="col-md-5 order-details">
+            <div class="section-title text-center">
+              <h3 class="title">Sản phẩm mua gần nhất</h3>
+            </div>
+            <div class="order-summary">
+              <div class="order-col">
+                <div><strong>PRODUCT</strong></div>
+                <div><strong>TOTAL</strong></div>
+              </div>
+              <div class="order-products">
+                <div class="order-col">
+                  <div>1x Product Name Goes Here</div>
+                  <div>$980.00</div>
+                </div>
+                <div class="order-col">
+                  <div>2x Product Name Goes Here</div>
+                  <div>$980.00</div>
+                </div>
+              </div>
+            </div>
+            <div><strong>Địa chỉ đặt hàng gấn nhất</strong></div>
+            <div class="payment-method">
+              <div class="input-radio">
+                <input type="radio" name="payment" id="payment-1" checked />
+                <label for="payment-1">
+                  <span></span>
+                  Địa chỉ 1
+                </label>
+                <div class="caption">
+                  <p>Ngõ 235, Hồ Tùng Mậu, Bắc Từ Liêm, Thành phố Hà Nội</p>
+                </div>
+              </div>
+              <div class="input-radio">
+                <input type="radio" name="payment" id="payment-2" />
+                <label for="payment-2">
+                  <span></span>
+                  Địa chỉ 2
+                </label>
+                <div class="caption">
+                  <p>130 Hàng bạc, Hoàn kiếm, Hà Nội</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Order Details -->
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /SECTION -->
 
     <!-- FOOTER -->
     <footer id="footer">
@@ -365,36 +415,36 @@
       </div>
       <!-- /top footer -->
 
-      <!-- bottom footer -->
-      <div id="bottom-footer" class="section">
-        <div class="container">
-          <!-- row -->
-          <div class="row">
-            <div class="col-md-12 text-center">
-                <img class="img-fluid" src="img/payments.png" alt="">
-           
-              <span class="copyright">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                All rights reserved | This template is made with
-                <i class="fa fa-heart-o"></i> by Duy
+        <!-- bottom footer -->
+        <div id="bottom-footer" class="section">
+            <div class="container">
+              <!-- row -->
+              <div class="row">
+                <div class="col-md-12 text-center">
+                    <img class="img-fluid" src="img/payments.png" alt="">
                
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              </span>
-            </div>
-            </div>
+                  <span class="copyright">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved | This template is made with
+                    <i class="fa fa-heart-o"></i> by Duy
+                   
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </span>
+                </div>
+                </div>
+              </div>
+              <!-- /row -->
           </div>
-          <!-- /row -->
-        </div>
-        <!-- /container -->
-      </div>
-      <!-- /bottom footer -->
+            <!-- /container -->
+          </div>
+          <!-- /bottom footer -->
     </footer>
     <!-- /FOOTER -->
-  
+
     <!-- jQuery Plugins -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -167,3 +167,17 @@
     });
   }
 })(jQuery);
+
+// Lấy danh sách các mục trong thanh nav
+var navItems = document.querySelectorAll("#navigation .main-nav li");
+// Đăng ký sự kiện click cho mỗi mục
+navItems.forEach(function (item) {
+  item.addEventListener("click", function () {
+    // Loại bỏ lớp 'active' từ tất cả các mục
+    navItems.forEach(function (item) {
+      item.classList.remove("active");
+    });
+    // Thêm lớp 'active' vào mục được nhấp vào
+    this.classList.add("active");
+  });
+});
